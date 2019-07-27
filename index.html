@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>novm - interactive</title>
+        <!-- novm runtime -->
+        <script src="novm.js" type="text/javascript"></script>
+        <!-- interactive -->
+        <script src="main.js" type="text/javascript"></script>
+        <style>
+            body {
+                color: white;
+                background-color: black;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 18px;
+            }
+
+            #output {
+                margin-bottom: 0;
+            }
+
+            #command {
+                border: none;
+                outline: none;
+
+                color: white;
+                background-color: black;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 18px;
+                width: 100%;
+            }
+        </style>
+        </head>
+    <body onload="Page.Load();">
+        <pre id="output"></pre>
+        <input type="text" id="command" onblur="this.focus()" autofocus>
+    </body>
+</html>

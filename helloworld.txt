@@ -1,0 +1,34 @@
+.novm sample program - hello world
+
+.the vm invokes the "main" function by default
+|main
+    .push hello world to stack
+    >Hello World!
+    .invoke the build in "print" function
+    &__print__
+
+.novm sample program - simple arithmetic
+|main
+    .push 32 to stack
+    >32
+    
+    .duplicate 32
+    <
+
+    .add two values
+    +
+
+    .duplicate 64
+    <
+
+    .print 64
+    &__print__
+
+    .push 2
+    >2
+
+    .divide
+    /
+
+    .print 32
+    &__print__
